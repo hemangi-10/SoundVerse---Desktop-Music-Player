@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller3">
+   <children>
+      <Label fx:id="name" layoutX="14.0" layoutY="8.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="104.0" text="Upload your songs to listen">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="upload" layoutX="14.0" layoutY="141.0" mnemonicParsing="false" onAction="#change" text="Upload" />
+      <TextField fx:id="tf" layoutX="97.0" layoutY="141.0" prefHeight="25.0" prefWidth="394.0" />
+      <Button fx:id="play" layoutX="155.0" layoutY="483.0" mnemonicParsing="false" onAction="#playm" text="Play" />
+      <Button fx:id="pause" layoutX="222.0" layoutY="483.0" mnemonicParsing="false" onAction="#pausem" text="Pause" />
+      <Button fx:id="reset" layoutX="304.0" layoutY="483.0" mnemonicParsing="false" onAction="#resetm" text="Reset" />
+      <Slider fx:id="slider" layoutX="69.0" layoutY="454.0" prefHeight="14.0" prefWidth="371.0" />
+      <Label fx:id="currentTime" layoutX="38.0" layoutY="452.0" text="0:00" />
+      <Label fx:id="totalTime" layoutX="447.0" layoutY="452.0" text="0:00" />
+      <TreeView fx:id="tv" layoutX="146.0" layoutY="209.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
